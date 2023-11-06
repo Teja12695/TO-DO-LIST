@@ -1,0 +1,26 @@
+.container{
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+}
+
+#int{
+    border: solid;
+    border-color: black;
+    height: 20px;
+    width: 200px;
+    padding:10px 12px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    margin-right: 40px;
+
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ToDoList.css">
+</head>
+<body style="background-color: aliceblue;">
+<div class="container">
+    <h1>To Do List</h1>
+    <input type ="text" placeholder=" Type the task" id="int"> <br> <br>
+    <button style="background-color: green;color: aliceblue;" id="subt">submit</button> <br>
+    <ul id="unord"></ul>
+</div>
+
+    <script>
+        var task = document.getElementById("int")
+        var bttn = document.getElementById("subt")
+        var ol = document.getElementById("unord")
+
+        bttn.addEventListener("click",function(){
+            var tasked = task.value
+            addtask(tasked)
+            task.value = ""
+        })
+
+        function addtask(tasked)
+        {
+            var li = document.createElement("li") //create a list
+            li.innerHTML = tasked
+            ol.appendChild(li)  // created list placed in ol
+
+        }
+    </script>
+</body>
+</html>
